@@ -2,10 +2,10 @@ package cz.martin.models;
 
 public class Score {
     private String nickname;
-    private int time;
+    private long time;
     private float percent;
 
-    public Score(String nickname, int time, float percent) {
+    public Score(String nickname, long time, float percent) {
         this.nickname = nickname;
         this.time = time;
         this.percent = percent;
@@ -15,7 +15,7 @@ public class Score {
         return nickname;
     }
 
-    public int getTime() {
+    public long getTime() {
         return time;
     }
 

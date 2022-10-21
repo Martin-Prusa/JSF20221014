@@ -11,13 +11,11 @@ public class ResultsBean {
     @Inject
     private ProblemsService problemsService;
 
-    private int time = 0;
-
     public int getScore() {
         return (int) (problemsService.getScore() * 100);
     }
 
     public int getTime() {
-        return time;
+        return problemsService.getTime();
     }
 }

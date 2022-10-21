@@ -13,7 +13,7 @@
 <h:body>
     <div class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="text-danger">Quick</span>Maths.io</a>
+            <h:link outcome="index.xhmtl" class="navbar-brand" href="#"><span class="text-danger">Quick</span>Maths.io</h:link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,8 +42,8 @@
                 <tr>
                     <th scope="row">#{st.index}</th>
                     <td>#{sc.nickname}</td>
-                    <td>#{sc.time}</td>
-                    <td>#{sc.percent}</td>
+                    <td>#{sc.time} s</td>
+                    <td>#{(sc.percent *100)}%</td>
                 </tr>
             </ui:repeat>
             </tbody>
